@@ -9,10 +9,17 @@
         transition: opacity 0.6s, visibility 0s 0.6s;
         margin-left: 34px;
     }
+
     @media (max-width: 320px) {
         margin-left: 20px;
     }
+
     &__link {
+        font-weight: $mainFontWeight;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
         text-decoration: none;
         color: #E1FD2C;
 
@@ -21,6 +28,7 @@
             opacity: 0.6;
         }
     }
+
     &-active {
         opacity: 1;
         visibility: visible;
