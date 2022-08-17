@@ -17,20 +17,123 @@
             <a class="menu__link" href="#press">Пресса</a>
         </nav>
         <a class="header__logo" href="#"></a>
-        
+
         <button class="mobile-button mobile-button_line">
             <span></span>
         </button>
-
     </header>
 
     <main class="content">
+        <section class="present">
+            <div class="present__wrap">
+                <h1 class="present__title">volkswagen T1</h1>
+                <h2 class="present__subtitle">Новая версия популярного микроавтобуса</h2>
+                <p class="present__description">С ЭЛЕКТРО ДВИГАТЕЛЕМ</p>
+    
+                <button class="present__button">Подробнее</button>
+            </div>
+            <img class="present__img" src="./images/car-main.jpg" alt="Авто общий план">
+        </section>
 
+        <section class="facts" id="facts">
+            
+            <p class="facts__description"> <span>VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli:
+                классический вэн T1 1966 года
+                с электрической силовой установкой.
+                По словам производителя, проект получит коммерческое продолжение, и через фирму-партнера eClassics
+                наборы для конверсии микроавтобусов в электрокары
+                и уже готовые машины будут продавать частным клиентам.</p>
+            
+            <div class="facts__wrap">
+                <div class="facts__plus">
+                    <h3 class="facts__plus-title">ПЛЮСЫ</h3>
+                    <ul class="facts__plus-list">
+                        <li>+ Экологичный</li>
+                        <li>+ Экономный</li>
+                        <li>+ Тихий</li>
+                    </ul>
+                </div>
+
+                <div class="facts__minus">
+                    <h3 class="facts__minus-title">МИНУСЫ</h3>
+                    <ul class="facts__minus-list">
+                        <li>- Дорогой</li>
+                        <li>- Подзарядка</li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+        <section class="galery" id="galery">
+
+            <div class="slider">
+                <div class="slider-line">
+                    <img class="slider__img" src="./images/car-slider1.jpg" alt="Авто на дороге">
+                    <img class="slider__img" src="./images/car-slider2.jpg" alt="Салон и приборная панель">
+                    <img class="slider__img" src="./images/car-slider3.jpg" alt="Салон и сиденья">
+                </div>  
+            </div>
+
+            <div class="slider__wrap">
+                <h2 class="slider__title">Галерея</h2>
+                <div class="slider__button-wrap">
+                    <button class="slider__button slider__button-prev"></button>
+                    <button class="slider__button slider__button-next"></button> 
+                </div> 
+            </div> 
+
+        </section>
+        <section class="press" id="press">
+            <div class="press__title-wrap">
+                <h2 class="press__title">Пресса</h2>
+            </div>
+            <div class="press__articles">
+                
+                <p class="press__article"><span>Engadget:</span> VW’s e-BULLI concept shows how your classic van can become an EV.</p>
+                <p class="press__article press__article_disabled"><span>Drive.ru:</span> Вэн Volkswagen e-Bulli скрестил классику с современной техникой.</p>             
+                
+                <label class="press__label-left" for="one">
+                    <input class="press__radio" type="radio" name="radio" id="one" value="1" checked />
+                    <span class="press__radio-pseudo"></span>
+                </label>
+
+                <label class="press__label-right" for="two">
+                    <input class="press__radio" type="radio" name="radio" id="two" value="2" /> 
+                    <span class="press__radio-pseudo"></span>
+                </label>
+
+                
+
+                <button class="press__button">Читать</button>
+            </div>
+        </section>
     </main>
 
 
     <footer class="footer">
+        <div class="footer__forms">
+            
+                <h2 class="footer__title">Подписка</h2>
+                <p class="footer__subtitle">На новые спецвыпуски машин.</p>
+            
+            
+            <form class="footer__subscribe"  name="subscribe-form">
+                <div class="footer__subscribe-up">
+                    <input class="footer__input footer__input-name"  type="text" required name="name" placeholder="имя">
+                    <input class="footer__input footer__input-surname"  type="text" required name="surname" placeholder="фамилия">
+                </div>
+                
+                <div class="footer__subscribe-down">
+                    <input class="footer__input footer__input-email"  type="email" required name="email" placeholder="почта">
+                    <button class="footer__button-subscribe"  type="submit">Подписка</button>
+                </div>
+            </form>
+        </div>    
 
+        
+        <div class="footer__info">
+            <img class="footer__logo" src="./images/logo.svg" alt="Логотип">
+            <p class="footer__copyright">© Auto-Magazine 2021</p>
+        </div>
     </footer>
 
     <script src="./script/index.js"></script>
