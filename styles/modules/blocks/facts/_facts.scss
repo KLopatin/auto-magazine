@@ -36,7 +36,7 @@
         display: flex;
         width: 50%;
         @media (max-width: 1150px) {
-            width: 98%;
+            width: 100%;
             border-top: 1px solid $textColor;
             min-height: 505px;
         }
